@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/to_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/to_message"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxWidth="270dp"
+            android:text="Hello Shommat"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+            android:text="21:04"
+            android:textColor="#09610C"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

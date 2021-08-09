@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.pdp.chatapp.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="uz.pdp.chatapp.fragment.PagerFragment"
+        android:label="fragment_pager"
+        tools:layout="@layout/fragment_pager" >
+        <action
+            android:id="@+id/action_pagerFragment_to_messengerFragment"
+            app:destination="@id/messengerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messengerFragment"
+        android:name="uz.pdp.chatapp.fragment.MessengerFragment"
+        android:label="fragment_messenger"
+        tools:layout="@layout/fragment_messenger" />
+    <fragment
+        android:id="@+id/groupMessangerFragment"
+        android:name="uz.pdp.chatapp.fragment.GroupMessangerFragment"
+        android:label="fragment_group_messanger"
+        tools:layout="@layout/fragment_group_messanger" />
+    <fragment
+        android:id="@+id/gruhFragment"
+        android:name="uz.pdp.chatapp.fragment.GruhFragment"
+        android:label="fragment_gruh"
+        tools:layout="@layout/fragment_gruh" >
+        <action
+            android:id="@+id/action_gruhFragment_to_groupMessangerFragment"
+            app:destination="@id/groupMessangerFragment" />
+    </fragment>
+</navigation>
